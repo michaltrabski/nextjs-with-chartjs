@@ -17,6 +17,7 @@ const MyDoughnutChart = () => {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
+    borderWidth: 11,
   };
 
   return (
@@ -24,12 +25,16 @@ const MyDoughnutChart = () => {
       <p>
         <a href="/">...back to Home Page</a>
       </p>
+      <p>
+        <a href="/doughnut-2">Doughnut 2 chart example</a>
+      </p>
+
       <div
         style={{
           position: 'relative',
-          width: '555px',
-          height: '555px',
-          border: '3px solid red',
+          width: '222px',
+          height: '222px',
+          border: '3px solid lightgrey',
         }}
       >
         <Doughnut data={data} options={options} />
@@ -40,12 +45,11 @@ const MyDoughnutChart = () => {
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            border: '3px solid green',
           }}
         >
           <div style={{ textAlign: 'center' }}>
-            <p>50</p>
-            <p>Applications</p>
+            <h1 style={{ margin: '0px' }}>50</h1>
+            <p style={{ margin: '0px', color: 'grey' }}>Applications</p>
           </div>
         </div>
       </div>
