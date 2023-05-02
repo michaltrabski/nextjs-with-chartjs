@@ -7,9 +7,9 @@ const MyDoughnutChart = () => {
     datasets: [
       {
         label: 'My First Doughnut Chart',
-        data: [300, 50, 100],
-        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-        hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+        data: [28, 16, 6],
+        backgroundColor: ['lightblue', 'blue', 'yellow'],
+        hoverBackgroundColor: ['lightblue', 'blue', 'yellow'],
       },
     ],
   };
@@ -20,8 +20,18 @@ const MyDoughnutChart = () => {
   };
 
   return (
-    <div style={{ width: '1100px', height: '1100px' }}>
-      <div style={{ border: '3px solid red' }}>
+    <div>
+      <p>
+        <a href="/">...back to Home Page</a>
+      </p>
+      <div
+        style={{
+          position: 'relative',
+          width: '555px',
+          height: '555px',
+          border: '3px solid red',
+        }}
+      >
         <Doughnut data={data} options={options} />
 
         <div
@@ -33,7 +43,10 @@ const MyDoughnutChart = () => {
             border: '3px solid green',
           }}
         >
-          <p>Dodatkowy text</p>
+          <div style={{ textAlign: 'center' }}>
+            <p>50</p>
+            <p>Applications</p>
+          </div>
         </div>
       </div>
     </div>
